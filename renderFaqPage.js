@@ -1,19 +1,15 @@
-function renderAboutPage() {
-    localStorage.setItem('current', 'somepage1');
+function renderFaqPage() {
+    localStorage.setItem('current', 'somepage2');
 
     window.onload = function(){
-    if(localStorage.getItem('current') === 'somepage1') renderPortPage();
+    if(localStorage.getItem('current') === 'somepage2') renderFaqPage();
     }
+
     return `
     <div class="block">
-        <h1>My portfolio</h1>
-        <div class="categories">
-            <a>All</a>
-            <a>Amba</a>
-            <a>Test</a>
-        </div>
+        <h1>FAQ</h1>
         <div class="cards">
-            <a href="https://google.com"><img src="/img/ava.png" alt=""><h2>Project</h2></a>
+            <a><img src="/img/ava.png" alt=""><h2>Project</h2></a>
             <a><img src="/img/ava.png" alt=""><h2>Project</h2></a>
             <a><img src="/img/ava.png" alt=""><h2>Project</h2></a>
             <a><img src="/img/ava.png" alt=""><h2>Project</h2></a>
@@ -25,4 +21,4 @@ function renderAboutPage() {
 `;
 }
 
-export default renderAboutPage; 
+export default renderFaqPage; 

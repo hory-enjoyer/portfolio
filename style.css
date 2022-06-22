@@ -3,7 +3,6 @@
     --element-height: 32vw;
 }
 
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -21,13 +20,12 @@ body {
     justify-content: center;
     position: fixed;
     top: 50%;
-    right: 0;
+    right: 1%;
     transform: translate(0, -50%);
     width: var(--element-width);
     height: var(--element-height);
     max-width: 128px;
     max-height: 410px;
-    margin: 0 10px 0 0;
     background-color: white;
     border-radius: 64px;
     box-shadow: 10px 10px 20px rgba(161, 161, 161, 0.6), -29px -29px 65px #ffffff;
@@ -58,11 +56,6 @@ body {
     border: 1px solid rgba(226, 226, 226, 0.9);
 }
 
-
-.PUTINDIENAHUJ {
-    background-color: RED;
-}
-
 .lock {
     position: fixed;
     COLOR: WHITE;
@@ -82,17 +75,13 @@ body {
 
 }
 
-.wrapper{
-    width: 100vw;
-    height: 100vh;
-}
-
 .mainblock {
-    position: relative;
+    position: absolute;
     top: 2%;
     left: 30%;
     width: 50%;
-    height: 96%;
+    height: auto;
+    padding: 20px 0 20px 0;
     background-color: white;
     border-radius: 64px;
     box-shadow: 20px 20px 50px #a1a1a1, -29px -29px 65px #ffffff;
@@ -179,12 +168,11 @@ body {
 
 .content1 {
     position: relative;
-    top: 4%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
     height: auto;
-    padding: 30px 50px;
+    padding: 30px 40px;
     text-align: justify;
     font-family: Work Sans;
     font-size: 20px;
@@ -205,7 +193,42 @@ body {
 
 .content2 {
     position: relative;
-    margin-top: 50px;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: auto;
+    padding: 15px 15px;
+    text-align: justify;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    border-radius: 64px;
+    box-shadow: 5px 5px 10px #a1a1a1, -29px -29px 65px #ffffff;
+    z-index: 1;
+}
+
+.content2 > a{
+    color: rgb(209, 209, 209);
+    margin: 0 5px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.content2 > a:hover{
+    color: black;
+}
+
+.content2{
+    display: block;  
+    text-align:center;
+}
+
+.content3 {
+    position: relative;
+    margin-top: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -222,7 +245,121 @@ body {
     z-index: 1;
 }
 
-.content2{
-    display: block;  
-    text-align:center;
+.content3 > h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.content4{
+    position: relative;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: auto;
+    padding: 30px 50px;
+    text-align: justify;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    border-radius: 64px;
+    box-shadow: 5px 5px 10px #a1a1a1, -29px -29px 65px #ffffff;
+    z-index: 1;
+}
+
+.content4 > h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.block{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    width: 80%;
+    height: 96%;
+    padding: 20px 0 20px 0;
+    background-color: white;
+    border-radius: 64px;
+    box-shadow: 20px 20px 50px #a1a1a1, -20px -20px 60px #ffffff;
+}
+
+.block > h1{
+    font-family: Work Sans;
+    text-align: center;
+    font-size: 60px;
+    font-family: Work Sans;
+    text-shadow: -3px -3px rgba(128, 128, 128, 0.7), 3px 3px rgba(128, 128, 128, 0.7);
+    transform: scale(0.95);
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.block > .categories{
+    width: 100%;
+    margin-top: 30px;
+    font-family: Work Sans;
+    font-weight: 500;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.categories > a {    
+    color: rgb(200, 200, 200);
+    font-size: 50px;
+    font-family: Work Sans;
+    transform: rotate(0deg) translate(0%, 0%);
+    top: -5%;
+    left: 0;
+    text-shadow: -1px -1px rgba(128, 128, 128, 0.2), 11px 11px 33px rgba(0, 0, 0, 0.25);
+    transition: 0.4s;
+}
+
+.categories > a:hover{
+    text-shadow: -3px -3px rgba(128, 128, 128, 0.6), 5px 5px 5px rgba(128, 128, 128, 0.6);
+    transform: scale(0.95);
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.cards{
+    width: 100%;
+    margin-top: 30px;
+    font-family: Work Sans;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards > a{
+    width: 270px;
+    margin-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    height: 300px;
+    border-radius: 64px;
+    box-shadow: 20px 20px 50px #a1a1a1, -20px -20px 60px #ffffff;
+    transition: 0.4s;
+    transform: scale(1);
+}
+
+.cards > a:hover{
+    box-shadow: 15px 15px 45px 2px rgba(0, 0, 0, 0), 5px 5px 15px 2px rgba(0, 0, 0, 0.07) inset;
+    transform: scale(0.95);
+    border: 1px solid rgba(226, 226, 226, 0.9);
+}
+
+.cards > a > img{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+.cards > a > h2{
+    margin-top: 15px;
 }

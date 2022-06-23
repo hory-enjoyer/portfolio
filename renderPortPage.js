@@ -4,9 +4,9 @@ function renderAboutPage() {
     <div class="block">
         <h1>My portfolio</h1>
         <div class="categories">
-            <a>All</a>
-            <a>Amba</a>
-            <a>Test</a>
+            <a id="all">All</a>
+            <a id="amba">Amba</a>
+            <a id="test">Test</a>
         </div>
         <div class="cards">
             <a href="https://google.com"><img src="/img/ava.png" alt=""><h2>Project</h2></a>

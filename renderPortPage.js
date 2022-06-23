@@ -1,9 +1,5 @@
 function renderAboutPage() {
-    localStorage.setItem('current', 'somepage1');
-
-    window.onload = function(){
-    if(localStorage.getItem('current') === 'somepage1') renderPortPage();
-    }
+    sessionStorage.setItem('current', 'somepage1');
     return `
     <div class="block">
         <h1>My portfolio</h1>

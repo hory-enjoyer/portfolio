@@ -1,5 +1,5 @@
 function renderAboutPage() {
-    sessionStorage.setItem('current', 'somepage');
+    sessionStorage.setItem('current', 'about');
     return `
     <div class="lock">LOCK</div>
 

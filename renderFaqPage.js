@@ -1,5 +1,5 @@
 function renderFaqPage() {
-    sessionStorage.setItem('current', 'somepage2');
+    sessionStorage.setItem('current', 'faq');
     return `
     <div class="block">
         <h1>FAQ</h1>

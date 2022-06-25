@@ -25,10 +25,11 @@
 
     <script src="https://kit.fontawesome.com/68a34cfcac.js" crossorigin="anonymous"></script>
     <script type="module">
-        import {onClick, onClick1, onClick2} from "./script.js"
-            document.getElementById('0').onclick=onClick;
-            document.getElementById('1').onclick=onClick1;
-            document.getElementById('2').onclick=onClick2;
+        import {onClickAboutPage, onClickPortPage, onClickFaqPage} from "./script.js";
+        import renderPortPage from "./renderPortPage.js";
+            document.getElementById('0').onclick=onClickAboutPage;
+            document.getElementById('1').onclick=onClickPortPage;
+            document.getElementById('2').onclick=onClickFaqPage;
         </script>
 </body>
 

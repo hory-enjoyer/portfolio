@@ -2,71 +2,158 @@ import renderAboutPage from "./renderAboutPage.js";
 import renderPortPage from "./renderPortPage.js";
 import renderFaqPage from "./renderFaqPage.js";
 
-export function onClick() {
+export function onClickAboutPage() {
     const elem = document.querySelector(".wrapper");
     elem.innerHTML = renderAboutPage();
-    but(0);
-    clearb(1);
-    clearb(2);
+    navButtonClick(0);
+    clearButton(1);
+    clearButton(2);
 }
 
-export function onClick1() {
+export function onClickPortPage() {
     const elem = document.querySelector(".wrapper");
     elem.innerHTML = renderPortPage();
-    but(1);
-    clearb(0);
-    clearb(2);
-    text();
+    navButtonClick(1);
+    clearButton(0);
+    clearButton(2);
+    changeButtonOfCategories('all');
+    changeButtonOfCategories('amba');
+    changeButtonOfCategories('test');
+    changeButtonOfCategoriesAfter('all');
+    changeButtonOfCategoriesAfter('amba');
+    changeButtonOfCategoriesAfter('test');
+    clearForAll();
+    clearForAmba();
 }
 
-export function onClick2() {
+export function onClickFaqPage() {
     const elem = document.querySelector('.wrapper');
     elem.innerHTML = renderFaqPage();
-    but(2);
-    clearb(0);
-    clearb(1);
+    navButtonClick(2);
+    clearButton(0);
+    clearButton(1);
 }
 
 window.onload = function () {
 
     if (!sessionStorage.getItem('current')) {
-        sessionStorage.setItem('current', 'somepage');
+        sessionStorage.setItem('current', 'about');
     }
 
     const elem = document.querySelector(".wrapper");
 
-    if (sessionStorage.getItem('current') === 'somepage') {
+    if (sessionStorage.getItem('current') === 'about') {
         elem.innerHTML = renderAboutPage();
-        but(0);
-    } else if (sessionStorage.getItem('current') === "somepage1") {
+        navButtonClick(0);
+    } else if (sessionStorage.getItem('current') === "port") {
         elem.innerHTML = renderPortPage();
-        but(1);
-        text('all');
-    } else if (sessionStorage.getItem('current') === "somepage2") {
+        navButtonClick(1);
+    } else if (sessionStorage.getItem('current') === "faq") {
         elem.innerHTML = renderFaqPage();
-        but(2);
+        navButtonClick(2);
     }
 }
 
-function but(id) {
-    let iid = document.getElementById(id).style;
-    iid.boxShadow = "15px 15px 45px 2px rgba(0, 0, 0, 0), 5px 5px 15px 2px rgba(0, 0, 0, 0.07) inset";
-    iid.transform = "scale(0.95)";
-    iid.border = "1px solid rgba(226, 226, 226, 0.9)";
+function navButtonClick(id) {
+    const button = document.getElementById(id).style;
+    button.boxShadow = "15px 15px 45px 2px rgba(0, 0, 0, 0), 5px 5px 15px 2px rgba(0, 0, 0, 0.07) inset";
+    button.transform = "scale(0.95)";
+    button.border = "1px solid rgba(226, 226, 226, 0.9)";
 }
 
-function clearb(idd) {
-    let id = document.getElementById(idd).style;
-    id.boxShadow = "none";
-    id.boxShadow = "15px 15px 40px 2px rgba(0, 0, 0, 0.12), 3px 3px 15px 2px rgba(0, 0, 0, 0) inset";
-    id.transform = "scale(1)";
-    id.border = "1px solid rgba(226, 226, 226, 0)";
-    id.transition = "0.4s";
+function clearButton(id) {
+    const button = document.getElementById(id).style;
+    button.boxShadow = "none";
+    button.boxShadow = "15px 15px 40px 2px rgba(0, 0, 0, 0.12), 3px 3px 15px 2px rgba(0, 0, 0, 0) inset";
+    button.transform = "scale(1)";
+    button.border = "1px solid rgba(226, 226, 226, 0)";
+    button.transition = "0.4s";
 }
 
-function text() {
-    let el = document.getElementById('all');
-    el.style.textShadow = "-3px -3px rgba(128, 128, 128, 0.6), 5px 5px 5px rgba(128, 128, 128, 0.6)";
-    el.style.transform = "scale(0.95)";
-    el.style.color = "rgba(255, 255, 255, 0.95)";  
+function changeButtonOfCategories(id) {
+    const category = document.getElementById(id);
+    const a = document.getElementById('amba');
+    category.onclick = function () {
+        category.style.textShadow = "-3px -3px rgba(128, 128, 128, 0.6), 5px 5px 5px rgba(128, 128, 128, 0.6)";
+        category.style.transform = "scale(0.95)";
+        category.style.color = "rgba(255, 255, 255, 0.95)";
+        a.style.color = 'red';
+    }
 }
+
+
+
+function changeButtonOfCategoriesAfter(id) {
+    const category = document.getElementById(id);
+    category.onclick = function () {
+        category.style.textShadow = "-3px -3px rgba(128, 128, 128, 0.6), 5px 5px 5px rgba(128, 128, 128, 0.6)";
+        category.style.transform = "scale(0.95)";
+        category.style.color = "rgba(255, 255, 255, 0.95)";
+    }
+}
+
+
+setTimeout(() => {
+    if (sessionStorage.getItem('current') === "port") {
+        changeButtonOfCategoriesAfter('all');
+        changeButtonOfCategoriesAfter('amba');
+        changeButtonOfCategoriesAfter('test');
+        clearForAll();
+        clearForAmba();
+        clearForTest();
+        }
+}, 0);
+
+// function clearForAll() {
+//     const a = document.getElementById('all');
+//     const b = document.getElementById('amba');
+//     const c = document.getElementById('test');
+//     a.onclick = function() {
+//         b.style.textShadow = "-1px -1px rgba(128, 128, 128, 0.2), 11px 11px 33px rgba(0, 0, 0, 0.25)";
+//         b.style.transform = "scale(1)";
+//         b.style.color = "rgb(200, 200, 200)";
+//         b.classList.add('hover');
+
+//         c.style.textShadow = "-1px -1px rgba(128, 128, 128, 0.2), 11px 11px 33px rgba(0, 0, 0, 0.25)";
+//         c.style.transform = "scale(1)";
+//         c.style.color = "rgb(200, 200, 200)";
+//         c.classList.add('hover');
+//     }
+// }
+
+// function clearForAmba() {
+//     const a = document.getElementById('all');
+//     const b = document.getElementById('amba');
+//     const c = document.getElementById('test');
+//     b.onclick = function() {
+//         a.style.textShadow = "-1px -1px rgba(128, 128, 128, 0.2), 11px 11px 33px rgba(0, 0, 0, 0.25)";
+//         a.style.transform = "scale(1)";
+//         a.style.color = "rgb(200, 200, 200)";
+//         b.classList.add('hover');
+
+//         c.style.textShadow = "-1px -1px rgba(128, 128, 128, 0.2), 11px 11px 33px rgba(0, 0, 0, 0.25)";
+//         c.style.transform = "scale(1)";
+//         c.style.color = "rgb(200, 200, 200)";
+//         c.classList.add('hover');
+//     }
+// }
+
+// function clearForTest() {
+//     const a = document.getElementById('all');
+//     const b = document.getElementById('amba');
+//     const c = document.getElementById('test');
+//     c.onclick = function() {
+//         a.style.textShadow = "-1px -1px rgba(128, 128, 128, 0.2), 11px 11px 33px rgba(0, 0, 0, 0.25)";
+//         a.style.transform = "scale(1)";
+//         a.style.color = "rgb(200, 200, 200)";
+//         b.classList.add('hover');
+
+//         b.style.textShadow = "-1px -1px rgba(128, 128, 128, 0.2), 11px 11px 33px rgba(0, 0, 0, 0.25)";
+//         b.style.transform = "scale(1)";
+//         b.style.color = "rgb(200, 200, 200)";
+//         b.classList.add('hover');
+//     }
+// }
+
+
+

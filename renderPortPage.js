@@ -1,5 +1,5 @@
 function renderAboutPage() {
-    sessionStorage.setItem('current', 'somepage1');
+    sessionStorage.setItem('current', 'port');
     return `
     <div class="block">
         <h1>My portfolio</h1>

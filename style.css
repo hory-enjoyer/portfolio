@@ -66,6 +66,7 @@ body {
     left: 0;
     text-shadow: -1px -1px rgba(128, 128, 128, 0.2), 11px 11px 33px rgba(0, 0, 0, 0.25);
     transition: 0.4s;
+    cursor: pointer;
 }
 
 .lock:hover {

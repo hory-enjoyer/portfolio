@@ -8,8 +8,7 @@ function renderAboutPage() {
             <a id="amba" class="cat">Amba</a>
             <a id="test" class="cat">Test</a>
         </div>
-        <div class="cards">
-        </div>
+        <div class="cards"></div>
         
     </div>
 `;

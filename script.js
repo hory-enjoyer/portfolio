@@ -9,6 +9,7 @@ export function onClickAboutPage() {
     const elem = document.querySelector(".wrapper");
     elem.innerHTML = renderAboutPage();
     addActiveStyleToButton(0,1,2);
+    navRemoveClass();
 }
 
 export function onClickPortPage() {
@@ -17,12 +18,14 @@ export function onClickPortPage() {
     addActiveStyleToButton(1,0,2);
     onClickTogether();
     changeOnClickAllCatgories();
+    navAddClass();
 }
 
 export function onClickFaqPage() {
     const elem = document.querySelector('.wrapper');
     elem.innerHTML = renderFaqPage();
     addActiveStyleToButton(2,0,1);
+    navAddClass();
 }
 
 window.onload = function () {
@@ -40,10 +43,11 @@ window.onload = function () {
         addActiveStyleToButton(1,0,2);
         onClickTogether(); 
         changeOnClickAllCatgories();
-
+        navAddClass();
     } else if (sessionStorage.getItem('current') === "faq") {
         elem.innerHTML = renderFaqPage();
         addActiveStyleToButton(2,0,1);
+        navAddClass();
     }
 }
 
@@ -113,4 +117,14 @@ function onClickTogether() {
     onClickAllCatgories();
     onClickAmbaCatgories();
     onClickTestCatgories();
+}
+
+function navAddClass() {
+    const nav = document.querySelector('.navbar');
+    nav.classList.add('navbarPort');
+}
+
+function navRemoveClass() {
+    const nav = document.querySelector('.navbar');
+    nav.classList.remove('navbarPort');
 }

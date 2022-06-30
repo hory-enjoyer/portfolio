@@ -5,8 +5,8 @@ function renderAboutPage() {
         <h1>My portfolio</h1>
         <div class="categories">
             <a id="all" class="cat">All</a>
-            <a id="amba" class="cat">Amba</a>
-            <a id="test" class="cat">Test</a>
+            <a id="amba" class="cat">Ambassador's</a>
+            <a id="test" class="cat">TestNet's</a>
         </div>
         <div class="cards"></div>
         

@@ -350,12 +350,19 @@ body {
         left: 40%;
         width: 45%;
     }
+    .categories > a{
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width:900px) {
     .mainblock {
         left: 45%;
         width: 35%;
+    }
+
+    .categories > a{
+        font-size: 30px;
     }
 }
 
@@ -451,4 +458,21 @@ body {
     .navbarPort{
         margin-top: 10px;
     }
+
+    .categories > a{
+        font-size: 20px;
+    }
+
+    .cat:hover{
+        text-shadow: -1px -1px rgba(128, 128, 128, 0.6), 1px 1px 1px rgba(128, 128, 128, 0.6);
+        transform: scale(0.95);
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    .active-cat{
+        text-shadow: -1px -1px rgba(128, 128, 128, 0.6), 3px 3px 3px rgba(128, 128, 128, 0.6);
+        transform: scale(0.95);
+        color: rgba(255, 255, 255, 0.95);
+    }
+
 }

@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+html{
+    height: 400%;
+}
+
 body {
     background-color: white;
 }
@@ -264,7 +268,7 @@ body {
     width: 100%;
     max-width: 1000px;
     margin: 30px auto;
-    padding: 15px 15px;
+    padding: 15px;
     font-family: Work Sans;
     display: flex;
     flex-wrap: wrap;
@@ -306,6 +310,7 @@ body {
     width: 100%;
     max-width: 1000px;
     margin: 20px auto;
+    padding: 15px;
     font-family: Work Sans;
     display: flex;
     flex-wrap: wrap;
@@ -336,4 +341,100 @@ body {
     width: 200px;
     border-radius: 50%;
     margin-top: 8px;
+}
+
+@media screen and (max-width: 800px) {
+    .lock {
+        position: fixed;
+        font-size: 40vw;
+        transform: none;
+        top: -5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .lock:hover {
+        transform: translateX(-50%);
+    }
+
+    .mainblock{
+        top: 35%;
+        width: 80%;
+        left: 2%;
+    }
+
+    .navbar{
+        top: 60%;
+        z-index: 4;
+    }
+
+    .cat{
+        font-size: 30px;
+    }
+
+    .cat:hover{
+        text-shadow: -2px -2px rgba(128, 128, 128, 0.6), 3px 3px 3px rgba(128, 128, 128, 0.6);
+    }
+
+    .active-cat{
+        text-shadow: -2px -2px rgba(128, 128, 128, 0.6), 3px 3px 3px rgba(128, 128, 128, 0.6);
+    } 
+}
+
+@media screen and (max-width: 620px){
+    .mainblock{
+        top: 27%;
+    }
+
+    .block > h1 {
+        font-size: 40px;
+    }
+
+    .categories{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cat{
+        margin-bottom: 7px;
+
+    }
+
+    .cat:hover{
+        text-shadow: -1px -1px rgba(128, 128, 128, 0.6), 3px 3px 3px rgba(128, 128, 128, 0.6);
+    }
+
+    .active-cat{
+        text-shadow: -1px -1px rgba(128, 128, 128, 0.6), 3px 3px 3px rgba(128, 128, 128, 0.6);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar {
+        flex-direction: row;
+        position: sticky;
+        top: 0;
+        transform: translate(0, 0);
+        padding: 10px 1px;
+        width: var(--element-height);
+        height: var(--element-width);
+    } 
+
+    .but-nav{
+        margin: 0 3px 0 3px
+    }
+
+    body, html, .wrapper {
+        height: 100vh;
+    }
+
+    .mainblock{
+        width: 96%;
+        top: 20%;
+    }
+
+    .content1{
+        margin-top: 40px;
+    }
 }

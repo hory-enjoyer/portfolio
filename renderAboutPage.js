@@ -16,19 +16,16 @@ function renderAboutPage() {
 </div>
 <div class="content3">
     <h2>About me</h2>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, earum quos? Blanditiis laboriosam quod,
-    accusamus beatae impedit, quis iure placeat modi voluptate atque, voluptates odit doloremque dolore
-    nostrum nisi necessitatibus corporis rerum sint praesentium ipsum qui? Incidunt soluta dicta cupiditate
-    repellendus dolorum accusamus, adipisci et enim ad ut voluptates accusantium ullam qui nostrum delectus
-    fugit non vero at explicabo error iusto veniam. Nostrum, voluptate.
+    Greeting! I am a front-end developer with a focus on WEB3. I have an experience of community after
+    working for 2 years as customer supporter I took communication skills which have allowed me to manage
+    complex crypto projects. I participate as a moderator/ ambassador/ validator in mainnets and testnets of
+    such networks as cosmos, polkadot, as well as other unique blockchains.
+    You can see my portfolio already here.
 </div>
 <div class="content4">
     <h2>FAQ</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quia voluptatem dicta, vel saepe
-        dignissimos, repudiandae sed consequatur eligendi harum impedit dolorum natus explicabo repellat
-        nesciunt commodi cum architecto magni? Ad ducimus doloribus nesciunt! Vero, commodi corporis ducimus
-        alias iste culpa labore itaque officiis obcaecati. Eaque eum, officia velit nobis blanditiis et!
-        Quidem non excepturi placeat totam quasi ratione magnam minima velit recusandae ea!
+    <p>The idea of this section is to make introductory articles that you can rely on at the beginning of your journey, they will be published periodically. I would be very grateful for the feedback that you can leave under my articles.
+    The idea of this section is to make introductory articles that you can rely on at the beginning of your journey, they will be published periodically. I would be very grateful for the feedback that you can leave under my articles. In the second tab, you can see all my contributions, it can be investments, ambassadorship or validation.
     </p>
 </div>
     </div>

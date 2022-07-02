@@ -348,7 +348,7 @@ body {
         position: fixed;
         font-size: 40vw;
         transform: none;
-        top: -5%;
+        top: -30px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -383,7 +383,7 @@ body {
 
 @media screen and (max-width: 620px){
     .mainblock{
-        top: 27%;
+        top: 200px;
     }
 
     .block > h1 {
@@ -415,7 +415,9 @@ body {
         flex-direction: row;
         position: sticky;
         top: 0;
-        transform: translate(0, 0);
+        left: 50%;
+        margin-top: 20vh;
+        transform: translateX(-50%);
         padding: 10px 1px;
         width: var(--element-height);
         height: var(--element-width);
@@ -436,5 +438,18 @@ body {
 
     .content1{
         margin-top: 40px;
+    }
+
+    html, .wrapper, body {
+        height: 300vh;
+    }
+
+    .block{
+        top: 50px;
+        width: 96%;
+    }
+
+    .navbarPort{
+        margin-top: 0;
     }
 }

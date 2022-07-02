@@ -452,4 +452,8 @@ body {
     .navbarPort{
         margin-top: 0;
     }
+
+    .content2{
+        width: 70%;
+    }
 }

@@ -13,7 +13,7 @@ function allCategories() {
     <a target = "_blank" href="https://ironfish.network/"><img src="https://drive.google.com/file/d/1NEB8ZvbxqEYP8s_Hg1ZBz2IqfyWK6hvi/view?usp=sharing" alt="Ironfish"><h2>Ironfish</h2></a>
     <a target = "_blank" href="https://starkware.co/starknet/"><img src="https://drive.google.com/file/d/19f-PJfmdweopNMTUphHITIq9X70vXTap/view?usp=sharing" alt="StarkNet"><h2>StarkNet</h2></a>
     <a target = "_blank" href="https://sui.io/"><img src="https://drive.google.com/file/d/19F-_VsQ4ErcdXSPumAvko2vEfhB4NwvN/view?usp=sharing" alt="Sui"><h2>Sui</h2></a>
-    <a target = "_blank" href="https://aptoslabs.com/"><img src="https://drive.google.com/file/d/1aSeskL2vAbVzK0lF3z2qiHqANCNzi3Nn/view?usp=sharing" alt="Aptos"><h2>Aptos</h2></a>
+    <a target = "_blank" href="https://aptoslabs.com/"><img src="https://cdn.discordapp.com/attachments/983771088330817566/993134783876042782/Aptos.png" alt="Aptos"><h2>Aptos</h2></a>
     <a target = "_blank" href="https://archway.io"><img src="https://drive.google.com/file/d/1lPoWtBH8qVZqyWGCtP0SgZ-ShPv7sKCf/view?usp=sharing" alt="Archway"><h2>Archway</h2></a>
     `;
 }

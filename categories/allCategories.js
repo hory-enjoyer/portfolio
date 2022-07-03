@@ -15,6 +15,7 @@ function allCategories() {
     <a target = "_blank" href="https://sui.io/"><img src="/img/Sui.png" alt="Sui"><h2>Sui</h2></a>
     <a target = "_blank" href="https://aptoslabs.com/"><img src="/img/Aptos.png" alt="Aptos"><h2>Aptos</h2></a>
     <a target = "_blank" href="https://archway.io"><img src="/img/Archway.png" alt="Archway"><h2>Archway</h2></a>
+    <a target = "_blank" href="https://archway.io"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Photos_icon_%282020%29.svg/800px-Google_Photos_icon_%282020%29.svg.png" alt="Archway"><h2>Archway</h2></a>
     `;
 }
 export default allCategories;

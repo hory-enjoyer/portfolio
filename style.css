@@ -335,8 +335,12 @@ body {
 
 .cards1 > a > img{
     width: 200px;
-    border-radius: 50%;
+    border-radius: 10px;
     margin-top: 8px;
+}
+
+.cards1 > a > p {
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 800px) {

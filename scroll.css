@@ -1,0 +1,18 @@
+@charset "UTF-8";
+::-webkit-scrollbar {
+  width: 6px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-button {
+  background-color: rgba(22, 21, 29, 0.8);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(22, 21, 29, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.9);
+}

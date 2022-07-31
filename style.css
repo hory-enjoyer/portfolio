@@ -3,16 +3,14 @@
 :root {
   --element-width: 10vw;
   --element-height: 32vw;
-  --shadow: 3px 3px 5px rgba(161, 161, 161, 0.8),
-    -3px -3px 5px rgba(230, 230, 230, 0.8);
-  --shadowNavButton: 3px 3px 5px rgba(161, 161, 161, 0.8),
-    -3px -3px 5px rgba(230, 230, 230, 0.8) inset;
+  --shadow: 3px 3px 5px rgb(161, 161, 161), -3px -3px 5px rgb(230, 230, 230);
+  --shadowNavButton: 3px 3px 5px rgb(161, 161, 161),
+    -3px -3px 5px rgba(230, 230, 230) inset;
   --shadowActiveButton: 2px 2px 5px 2px rgba(0, 0, 0, 0),
-    2px 2px 5px 2px rgba(0, 0, 0, 0.2) inset;
-  --shadowText: 3px 3px 5px rgba(161, 161, 161, 0.9),
-    -3px -3px 5px rgba(230, 230, 230, 0.9);
+    2px 2px 5px 2px rgba(0, 0, 0, 0.3) inset;
+  --shadowText: 3px 3px 5px rgb(161, 161, 161), -3px -3px 5px rgb(230, 230, 230);
   --shadowTextActive: 2px 2px 5px rgba(0, 0, 0, 0),
-    2px 2px 5px rgba(0, 0, 0, 0.2);
+    2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 * {

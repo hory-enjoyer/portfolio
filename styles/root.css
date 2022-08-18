@@ -1,0 +1,28 @@
+:root {
+  --element-width: 9vw;
+  --element-height: 25vw;
+  --shadow: 3px 3px 5px rgb(161, 161, 161), -3px -3px 5px rgb(230, 230, 230);
+  --shadowNavButton: 3px 3px 5px rgb(161, 161, 161),
+    -3px -3px 5px rgba(230, 230, 230) inset;
+  --shadowActiveButton: 2px 2px 5px 2px rgba(0, 0, 0, 0),
+    2px 2px 5px 2px rgba(0, 0, 0, 0.3) inset;
+  --shadowText: 3px 3px 5px rgb(161, 161, 161), -3px -3px 5px rgb(230, 230, 230);
+  --shadowTextActive: 2px 2px 5px rgba(0, 0, 0, 0),
+    2px 2px 5px rgba(0, 0, 0, 0.3);
+  --ws: Work Sans;
+  --h1: 4rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+html {
+  overflow-x: hidden;
+}

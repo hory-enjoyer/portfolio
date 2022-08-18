@@ -1,0 +1,93 @@
+.mainblock {
+  position: absolute;
+  top: 2%;
+  left: 30%;
+  width: 55%;
+  padding: 20px 0 20px 0;
+  background-color: white;
+  border-radius: 64px;
+  box-shadow: var(--shadow);
+  font-family: var(--ws);
+  font-weight: 400;
+}
+
+.content1 {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  padding: 30px 40px;
+  text-align: justify;
+  border-radius: 64px;
+  box-shadow: var(--shadow);
+}
+
+.content1 > h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.content1 > p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.content2 {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  padding: 15px 15px;
+  border-radius: 64px;
+  box-shadow: var(--shadow);
+}
+
+.content2 > a {
+  color: rgb(209, 209, 209);
+  margin: 0 5px;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.content2 > a:hover {
+  color: black;
+}
+
+.content3 {
+  position: relative;
+  margin-top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  padding: 30px 50px;
+  text-align: justify;
+  border-radius: 64px;
+  box-shadow: var(--shadow);
+}
+
+.content3 > h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.content4 {
+  position: relative;
+  margin-top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  padding: 30px 50px;
+  text-align: justify;
+  border-radius: 64px;
+  box-shadow: var(--shadow);
+}
+
+.content4 > h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}

@@ -1,0 +1,16 @@
+.lock {
+  position: fixed;
+  color: white;
+  font-size: 40vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transform: rotate(-90deg) translate(-30%, -67%);
+  text-shadow: var(--shadowText);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.lock:hover {
+  text-shadow: var(--shadowTextActive);
+  transform: rotate(-90deg) translate(-30%, -67%) scale(0.95);
+  color: rgba(255, 255, 255, 0.95);
+}

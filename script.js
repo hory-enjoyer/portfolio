@@ -1,10 +1,11 @@
 import renderAboutPage from './render/renderAboutPage.js';
 import renderPortPage from './render/renderPortPage.js';
 import renderFaqPage from './render/renderFaqPage.js';
-import { data } from './data/data.js';
-import { ambaArr } from './data/dataAbma.js';
-import { testArr } from './data/dataTestnets.js';
-import { renderData } from './categories/generateCards.js';
+import './multiple/scroll.js';
+import {
+  onClickOnLoad,
+  changeOnClickAllCatgories,
+} from './multiple/categories.js';
 
 export function onClickAboutPage() {
   const elem = document.querySelector('.wrapper');
@@ -17,7 +18,7 @@ export function onClickPortPage() {
   const elem = document.querySelector('.wrapper');
   elem.innerHTML = renderPortPage();
   addActiveStyleToButton(1, 0, 2);
-  onClickTogether();
+  onClickOnLoad();
   changeOnClickAllCatgories();
   navAddClass();
 }
@@ -42,7 +43,7 @@ window.onload = function () {
   } else if (sessionStorage.getItem('current') === 'port') {
     elem.innerHTML = renderPortPage();
     addActiveStyleToButton(1, 0, 2);
-    onClickTogether();
+    onClickOnLoad();
     changeOnClickAllCatgories();
     navAddClass();
   } else if (sessionStorage.getItem('current') === 'faq') {
@@ -59,61 +60,6 @@ function addActiveStyleToButton(id, id1, id2) {
   but.classList.add('active-nav-button');
   remBut1.classList.remove('active-nav-button');
   remBut2.classList.remove('active-nav-button');
-}
-
-function changeOnClickAllCatgories() {
-  renderData(data);
-}
-
-function changeOnClickAmbaCatgories() {
-  renderData(ambaArr);
-}
-
-function changeOnClickTestCatgories() {
-  renderData(testArr);
-}
-
-function onClickAllCatgories() {
-  const all = document.getElementById('all');
-  const amba = document.getElementById('amba');
-  const test = document.getElementById('test');
-  all.onclick = function () {
-    changeOnClickAllCatgories();
-    all.classList.add('active-cat');
-    amba.classList.remove('active-cat');
-    test.classList.remove('active-cat');
-  };
-}
-
-function onClickAmbaCatgories() {
-  const all = document.getElementById('all');
-  const amba = document.getElementById('amba');
-  const test = document.getElementById('test');
-  amba.onclick = function () {
-    changeOnClickAmbaCatgories();
-    amba.classList.add('active-cat');
-    all.classList.remove('active-cat');
-    test.classList.remove('active-cat');
-  };
-}
-
-function onClickTestCatgories() {
-  const all = document.getElementById('all');
-  const amba = document.getElementById('amba');
-  const test = document.getElementById('test');
-  test.onclick = function () {
-    changeOnClickTestCatgories();
-    test.classList.add('active-cat');
-    amba.classList.remove('active-cat');
-    all.classList.remove('active-cat');
-  };
-}
-
-function onClickTogether() {
-  all.classList.add('active-cat');
-  onClickAllCatgories();
-  onClickAmbaCatgories();
-  onClickTestCatgories();
 }
 
 function navAddClass() {

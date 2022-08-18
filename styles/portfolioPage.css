@@ -1,0 +1,92 @@
+.block {
+  position: absolute;
+  top: 140px;
+  margin: 0 10px;
+  border-radius: 64px;
+  box-shadow: var(--shadow);
+  font-family: var(--ws);
+}
+
+.block > .wrapperText {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wrapperText > h1 {
+  text-align: center;
+  font-size: var(--h1);
+  text-shadow: var(--shadowText);
+  transform: scale(0.95);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.categories {
+  margin-top: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.wrapperBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0 20px;
+  text-shadow: var(--shadowText);
+  transition: 0.5s;
+}
+
+.cat:hover {
+  text-shadow: var(--shadowTextActive);
+  transform: scale(0.95);
+  color: rgba(161, 161, 161, 0.9);
+}
+
+.active-cat {
+  text-shadow: var(--shadowTextActive);
+  transform: scale(0.95);
+  color: rgba(161, 161, 161, 0.9);
+}
+
+.cards {
+  margin-top: 150px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards > a {
+  width: 280px;
+  margin: 0 20px 20px 0;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  height: 300px;
+  border-radius: 64px;
+  box-shadow: var(--shadowNavButton);
+  transition: 0.4s;
+  transform: scale(1);
+}
+
+.cards > a:hover {
+  box-shadow: var(--shadowActiveButton);
+  transform: scale(0.95);
+  border: 1px solid rgba(226, 226, 226, 0.9);
+}
+
+.cards > a > img {
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.cards > a > h2 {
+  margin-top: 15px;
+}

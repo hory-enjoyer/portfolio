@@ -1,0 +1,61 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  transform: translate(0, -50%);
+  width: var(--element-width);
+  height: var(--element-height);
+  max-width: 128px;
+  max-height: 410px;
+  background-color: white;
+  border-radius: 64px;
+  box-shadow: var(--shadow);
+  z-index: 2;
+}
+
+.navbarPort {
+  margin-top: 0;
+  flex-direction: row;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 400px;
+  max-height: 120px;
+  width: 26vw;
+  height: 8.5vw;
+}
+
+.but-nav {
+  display: grid;
+  place-content: center;
+  background-color: white;
+  color: rgb(209, 209, 209);
+  font-size: min(2vw, 32px);
+  margin: 7px;
+  width: 7vw;
+  height: 7vw;
+  max-width: 110px;
+  max-height: 110px;
+  border-radius: 50%;
+  box-shadow: var(--shadowNavButton);
+  cursor: pointer;
+  border: 1px solid rgba(226, 226, 226, 0);
+  transition: 0.4s;
+  transform: scale(1);
+}
+
+.active-nav-button {
+  box-shadow: var(--shadowActiveButton);
+  transform: scale(0.95);
+  border: 1px solid rgba(226, 226, 226, 0.9);
+}
+
+.but-nav:hover {
+  box-shadow: var(--shadowActiveButton);
+  transform: scale(0.95);
+  border: 1px solid rgba(226, 226, 226, 0.9);
+}

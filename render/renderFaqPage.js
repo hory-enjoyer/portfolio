@@ -1,8 +1,10 @@
 function renderFaqPage() {
-    sessionStorage.setItem('current', 'faq');
-    return `
-    <div class="block">
-        <h1>FAQ</h1>
+  sessionStorage.setItem('current', 'faq');
+  return `
+    <div class="blockFAQ">
+        <div class='wrapperText'>
+        <h1 class='faq'>FAQ</h1>
+        </div>
         <div class="cards1">
             <a href="https://teletype.in/@lockck/zhaxZBsU7b0" target = "_blank"><img src="https://cdn.discordapp.com/attachments/983771088330817566/993419040557113354/SAD.png" alt="Crypto"><h2>What is Crypto?</h2><p>I am often asked what kind of crypto to buy. But do they know what crypto is?<br><br> Click on card to find out!</p></a>
             <a href="https://teletype.in/@lockck/4lIfwXUYHde" target = "_blank"><img src="https://cdn.discordapp.com/attachments/983771088330817566/993445059032784957/pngwing.com_1.png" alt="Web 3.0"><h2>What is WEB 3?</h2><p>This topic generally not only affects the crypto, but why blockchain technology is so important for WEB 3.<br><br> Click on card to find out!</p></a>
@@ -14,4 +16,4 @@ function renderFaqPage() {
 `;
 }
 
-export default renderFaqPage; 
+export default renderFaqPage;

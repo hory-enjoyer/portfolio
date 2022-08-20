@@ -4,11 +4,10 @@
   left: 30%;
   width: 55%;
   padding: 20px 0 20px 0;
-  background-color: white;
   border-radius: 64px;
   box-shadow: var(--shadow);
   font-family: var(--ws);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .content1 {
@@ -17,7 +16,6 @@
   transform: translateX(-50%);
   width: 80%;
   padding: 30px 40px;
-  text-align: justify;
   border-radius: 64px;
   box-shadow: var(--shadow);
 }
@@ -29,7 +27,7 @@
 
 .content1 > p {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .content2 {
@@ -49,7 +47,7 @@
   margin: 0 5px;
   font-size: 3rem;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .content2 > a:hover {

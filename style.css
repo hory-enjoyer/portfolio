@@ -5,3 +5,8 @@
 @import './styles/mainPage.css';
 @import './styles/portfolioPage.css';
 @import './styles/faqPage.css';
+
+.wrapper,
+html {
+  height: 100vh;
+}

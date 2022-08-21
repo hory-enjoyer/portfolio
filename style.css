@@ -53,6 +53,10 @@
     top: 8%;
   }
 
+  .block {
+    top: 25%;
+  }
+
   .cards > a {
     width: 200px;
     height: 200px;

@@ -105,11 +105,4 @@ export const data = [
     label: 'Archway',
     rate: ['Testnet'],
   },
-  {
-    href: 'https://axelar.network/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137095495393371/Axelar.png',
-    label: 'Axelar',
-    rate: ['Testnet'],
-  },
 ];

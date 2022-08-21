@@ -6,7 +6,19 @@
 @import './styles/portfolioPage.css';
 @import './styles/faqPage.css';
 
-.wrapper,
-html {
-  height: 100vh;
+@media screen and (max-width: 1100px) {
+  .lock {
+    transform: rotate(0) translate(3%, -20%);
+    font-size: 36vw;
+  }
+  .lock:hover {
+    transform: rotate(0) translate(10%, -20%) scale(0.95);
+  }
+  .mainblock {
+    top: 28vw;
+    left: 30px;
+    width: 82%;
+    z-index: 2;
+    background-color: white;
+  }
 }

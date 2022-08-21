@@ -66,7 +66,7 @@ export function changeOnClickTestCatgories() {
 export function calculate(data) {
   const wrapper = document.getElementById('ident');
   const block = document.getElementById('blockSize');
-  block.style.width = data.length * 190 + 'px';
+  block.style.width = data.length * 160 + 'px';
   if (data.length < 4) {
     wrapper.classList.add('wrapperBlock');
   } else {

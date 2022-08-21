@@ -51,7 +51,7 @@
 
 .block {
   position: absolute;
-  top: 29%;
+  top: 30%;
   margin: 0 10px;
   border-radius: 64px;
   box-shadow: var(--shadow);
@@ -59,15 +59,16 @@
 }
 
 .cards {
-  padding: 15px;
+  padding: 10px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .cards > a {
   width: 280px;
-  margin: 0 20px 20px 0;
+  margin: 5px 10px;
   text-align: center;
   cursor: pointer;
   text-decoration: none;

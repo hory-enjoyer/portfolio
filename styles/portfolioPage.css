@@ -12,7 +12,6 @@
   padding: 5px 0;
   transform: translateX(-50%);
   box-shadow: var(--shadow);
-  font-family: var(--ws);
 }
 
 .wrapperText > h1 {
@@ -55,7 +54,6 @@
   margin: 0 10px;
   border-radius: 64px;
   box-shadow: var(--shadow);
-  font-family: var(--ws);
 }
 
 .cards {

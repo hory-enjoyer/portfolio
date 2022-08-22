@@ -1,7 +1,7 @@
 function renderFaqPage() {
   sessionStorage.setItem('current', 'faq');
   return `
-    <div div class='wrapperText'>
+    <div class='wrapperText'>
         <h1 class='faq'>FAQ</h1>
     </div>
     <div class="blockFAQ">

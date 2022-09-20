@@ -88,3 +88,20 @@
   margin-bottom: 10px;
   font-size: 2rem;
 }
+
+.content4 > a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.7rem;
+  margin: 0 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 1px 1px 2px rgb(50, 50, 50), -3px -3px 5px rgb(80, 80, 80);
+  transition: 0.5s;
+}
+
+.content4 > a:hover {
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1),
+    2px 2px 5px rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.7);
+}

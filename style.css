@@ -43,6 +43,7 @@
     top: 200px;
     margin: 0;
     max-width: 460px;
+    width: 96%;
     background-color: white;
   }
 
@@ -53,6 +54,7 @@
   .blockFAQ {
     top: 200px;
     max-width: 460px;
+    width: 96%;
     margin: 0 auto;
     background-color: white;
     display: flex;
@@ -61,7 +63,8 @@
 
   .cards1 {
     max-height: none;
-    max-width: 500px;
+    max-width: 460px;
+    width: 96%;
     justify-content: center;
   }
 }

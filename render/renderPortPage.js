@@ -1,7 +1,7 @@
 function renderAboutPage() {
   sessionStorage.setItem('current', 'port');
   return `
-    <div id='ident'>
+    <div id='ident' class='null'>
         <div class='wrapperText'>
             <h1>My portfolio</h1>
             <div class="categories">

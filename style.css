@@ -40,12 +40,14 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .null {
+    display: flex;
+    justify-content: center;
+  }
+
   .block {
     top: 200px;
-    max-width: 440px;
-    width: 90%;
-    margin: 0;
-    padding: 0;
+    max-width: 400px;
     background-color: white;
   }
 
@@ -54,7 +56,6 @@
   }
 
   .cards > a {
-    width: 280px;
     margin: 10px 0;
   }
 

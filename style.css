@@ -42,8 +42,8 @@
 
   .block {
     top: 200px;
-    max-width: 460px;
-    width: 96%;
+    max-width: 440px;
+    width: 90%;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -55,7 +55,7 @@
 
   .cards > a {
     width: 280px;
-    margin: 5px 0;
+    margin: 10px 0;
   }
 
   .blockFAQ {

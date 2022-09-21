@@ -1,6 +1,6 @@
 @charset "UTF-8";
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-button {
@@ -9,9 +9,10 @@
 
 ::-webkit-scrollbar-track {
   background-color: rgba(22, 21, 29, 0.8);
+  border-radius: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 2px;
+  border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.9);
 }

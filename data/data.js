@@ -1,107 +1,92 @@
 export const data = [
   {
     href: 'https://axelar.network/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137095495393371/Axelar.png',
+    imgSrc: '',
     label: 'Axelar',
     rate: ['Testnet'],
   },
   {
     href: 'https://bit.country/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137101279350884/BitCountry.png',
+    imgSrc: 'img/BitCountry.png',
     label: 'Bit.Country',
     rate: ['Testnet'],
   },
   {
     href: 'https://nymtech.net/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137155058700298/Nym.png',
+    imgSrc: '',
     label: 'Nym',
     rate: ['Testnet'],
   },
   {
     href: 'https://zeitgeist.pm/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137193503703070/ZTG.png',
+    imgSrc: 'img/ZTG.png',
     label: 'Zeitgeist',
     rate: ['Testnet'],
   },
   {
     href: 'https://www.connext.network/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137108812316824/Connext.png',
+    imgSrc: 'img/Connext.png',
     label: 'Connext',
     rate: ['Amba'],
   },
   {
     href: 'https://primex.finance/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137168526622771/Primex.png',
+    imgSrc: '',
     label: 'Primex',
     rate: ['Amba'],
   },
   {
     href: 'https://www.minima.global/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137146800111616/Minima.png',
+    imgSrc: '',
     label: 'Minima',
     rate: ['Testnet'],
   },
   {
     href: 'https://www.kyve.network/#/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137138063384616/Kyve.png',
+    imgSrc: '',
     label: 'Kyve',
     rate: ['Testnet'],
   },
 
   {
     href: 'https://subspace.network/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137182372016188/Subspace.png',
+    imgSrc: '',
     label: 'Subspace',
     rate: ['Testnet'],
   },
   {
     href: 'https://gno.land/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137122737389628/Gno.Land.png',
+    imgSrc: '',
     label: 'Gno.Land',
     rate: ['Testnet'],
   },
   {
     href: 'https://ironfish.network/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137130475888640/Ironfish.png',
+    imgSrc: '',
     label: 'Ironfish',
     rate: ['Testnet'],
   },
   {
     href: 'https://starkware.co/starknet/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137175552081980/StarkNet.png',
+    imgSrc: '',
     label: 'StarkNet',
     rate: ['Testnet'],
   },
   {
     href: 'https://sui.io/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137187631673354/Sui.png',
+    imgSrc: 'img/Sui.png',
     label: 'Sui',
     rate: ['Testnet'],
   },
   {
     href: 'https://aptoslabs.com/',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993134783876042782/Aptos.png',
+    imgSrc: 'img/Aptos.png',
     label: 'Aptos',
     rate: ['Testnet'],
   },
   {
     href: 'https://archway.io',
-    imgSrc:
-      'https://cdn.discordapp.com/attachments/983771088330817566/993137089535283310/Archway.png',
+    imgSrc: '',
     label: 'Archway',
     rate: ['Testnet'],
   },

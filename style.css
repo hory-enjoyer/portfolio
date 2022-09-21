@@ -33,15 +33,15 @@
   }
 
   .categories {
-    width: 420px;
-    font-size: 1.5rem;
+    max-width: 420px;
+    width: 90%;
+    font-size: 1.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   .block {
     top: 200px;
-    margin: 0;
     max-width: 460px;
     width: 90%;
     background-color: white;
@@ -49,8 +49,6 @@
 
   .cards {
     justify-content: center;
-    max-width: 460px;
-    width: 90%;
   }
 
   .blockFAQ {

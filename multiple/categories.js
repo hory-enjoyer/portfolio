@@ -67,7 +67,7 @@ export function calculate(data) {
   const wrapper = document.getElementById('ident');
   const block = document.getElementById('blockSize');
   block.style.width = data.length * 165 + 'px';
-  if (data.length < 4) {
+  if (data.length < 4 || window.innerWidth <= '700') {
     wrapper.classList.add('wrapperBlock');
   } else {
     wrapper.classList.remove('wrapperBlock');

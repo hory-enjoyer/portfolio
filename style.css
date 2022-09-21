@@ -34,11 +34,27 @@
     width: 380px;
     font-size: 1.5rem;
   }
+
   .block {
     top: 200px;
+    max-width: 460px;
+    background-color: white;
   }
+
+  .cards {
+    justify-content: center;
+  }
+
   .blockFAQ {
     top: 200px;
+    max-width: 460px;
+    margin: 0 auto;
+    background-color: white;
+  }
+
+  .cards1 {
+    max-height: none;
+    max-width: 500px;
   }
 }
 

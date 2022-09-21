@@ -1,7 +1,7 @@
 export const data = [
   {
     href: 'https://axelar.network/',
-    imgSrc: '',
+    imgSrc: 'img/Axelar.jpeg',
     label: 'Axelar',
     rate: ['Testnet'],
   },
@@ -13,7 +13,7 @@ export const data = [
   },
   {
     href: 'https://nymtech.net/',
-    imgSrc: '',
+    imgSrc: 'img/NYM.png',
     label: 'Nym',
     rate: ['Testnet'],
   },
@@ -31,44 +31,44 @@ export const data = [
   },
   {
     href: 'https://primex.finance/',
-    imgSrc: '',
+    imgSrc: 'img/Primex.svg',
     label: 'Primex',
     rate: ['Amba'],
   },
   {
     href: 'https://www.minima.global/',
-    imgSrc: '',
+    imgSrc: 'img/Minima.png',
     label: 'Minima',
     rate: ['Testnet'],
   },
   {
     href: 'https://www.kyve.network/#/',
-    imgSrc: '',
+    imgSrc: 'img/kyve.png',
     label: 'Kyve',
     rate: ['Testnet'],
   },
 
   {
     href: 'https://subspace.network/',
-    imgSrc: '',
+    imgSrc: 'img/Subspace.jpeg',
     label: 'Subspace',
     rate: ['Testnet'],
   },
   {
     href: 'https://gno.land/',
-    imgSrc: '',
+    imgSrc: 'img/Gno.Land.png',
     label: 'Gno.Land',
     rate: ['Testnet'],
   },
   {
     href: 'https://ironfish.network/',
-    imgSrc: '',
+    imgSrc: 'img/Ironfish.png',
     label: 'Ironfish',
     rate: ['Testnet'],
   },
   {
     href: 'https://starkware.co/starknet/',
-    imgSrc: '',
+    imgSrc: 'img/Starknet.png',
     label: 'StarkNet',
     rate: ['Testnet'],
   },
@@ -86,7 +86,7 @@ export const data = [
   },
   {
     href: 'https://archway.io',
-    imgSrc: '',
+    imgSrc: 'img/Archway.jpg',
     label: 'Archway',
     rate: ['Testnet'],
   },

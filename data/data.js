@@ -90,4 +90,10 @@ export const data = [
     label: 'Archway',
     rate: ['Testnet'],
   },
+  {
+    href: 'https://www.seinetwork.io/',
+    imgSrc: 'img/Sei.png',
+    label: 'Sei',
+    rate: ['Amba'],
+  },
 ];

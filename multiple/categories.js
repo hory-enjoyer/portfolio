@@ -25,8 +25,6 @@ function onClickAmbaCatgories() {
     all.classList.remove('active-cat');
     test.classList.remove('active-cat');
   };
-  const block = document.getElementById('blockSize');
-  block.style.width = '100px';
 }
 
 function onClickTestCatgories() {
@@ -50,28 +48,12 @@ export function onClickOnLoad() {
 
 export function changeOnClickAllCatgories() {
   renderData(data);
-  calculate(data);
 }
 
 export function changeOnClickAmbaCatgories() {
   renderData(ambaArr);
-  calculate(ambaArr);
 }
 
 export function changeOnClickTestCatgories() {
   renderData(testArr);
-  calculate(testArr);
-}
-
-export function calculate(data) {
-  const wrapper = document.getElementById('ident');
-  const block = document.getElementById('blockSize');
-  block.style.width = data.length * 165 + 'px';
-  if (window.innerWidth > '700') {
-    if (data.length < 4) {
-      wrapper.classList.add('wrapperBlock');
-    } else {
-      wrapper.classList.remove('wrapperBlock');
-    }
-  }
 }

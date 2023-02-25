@@ -8,48 +8,46 @@ import {
 } from './multiple/categories.js';
 
 export function onClickAboutPage() {
-  const elem = document.querySelector('.wrapper');
-  elem.innerHTML = renderAboutPage();
-  addActiveStyleToButton(0, 1, 2);
+  renderPage(renderAboutPage, 0, 1, 2);
   navRemoveClass();
 }
 
 export function onClickPortPage() {
-  const elem = document.querySelector('.wrapper');
-  elem.innerHTML = renderPortPage();
-  addActiveStyleToButton(1, 0, 2);
+  renderPage(renderPortPage, 1, 0, 2);
   onClickOnLoad();
   changeOnClickAllCatgories();
   navAddClass();
 }
 
 export function onClickFaqPage() {
-  const elem = document.querySelector('.wrapper');
-  elem.innerHTML = renderFaqPage();
-  addActiveStyleToButton(2, 0, 1);
+  renderPage(renderFaqPage, 2, 0, 1);
   navAddClass();
 }
 
-window.onload = function () {
-  if (!sessionStorage.getItem('current')) {
-    sessionStorage.setItem('current', 'about');
-  }
+function renderPage(renderFn, id, id1, id2) {
+  const elem = document.querySelector('.wrapper');
+  elem.innerHTML = renderFn();
+  addActiveStyleToButton(id, id1, id2);
+}
 
+window.onload = function () {
+  const current = sessionStorage.getItem('current') || 'about';
   const elem = document.querySelector('.wrapper');
 
-  if (sessionStorage.getItem('current') === 'about') {
-    elem.innerHTML = renderAboutPage();
-    addActiveStyleToButton(0, 1, 2);
-  } else if (sessionStorage.getItem('current') === 'port') {
-    elem.innerHTML = renderPortPage();
-    addActiveStyleToButton(1, 0, 2);
-    onClickOnLoad();
-    changeOnClickAllCatgories();
-    navAddClass();
-  } else if (sessionStorage.getItem('current') === 'faq') {
-    elem.innerHTML = renderFaqPage();
-    addActiveStyleToButton(2, 0, 1);
-    navAddClass();
+  switch (current) {
+    case 'port':
+      renderPage(renderPortPage, 1, 0, 2);
+      onClickOnLoad();
+      changeOnClickAllCatgories();
+      navAddClass();
+      break;
+    case 'faq':
+      renderPage(renderFaqPage, 2, 0, 1);
+      navAddClass();
+      break;
+    default:
+      renderPage(renderAboutPage, 0, 1, 2);
+      break;
   }
 };
 
